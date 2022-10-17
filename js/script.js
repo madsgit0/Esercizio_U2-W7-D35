@@ -30,7 +30,7 @@ async function displaySpotify(query){
         `<div class="label">
         <div class="song-data">
           <div class="cover-img">
-            <img src="https://e-cdns-images.dzcdn.net/images/cover/519400e29d268f449cf00af879e71af6/56x56-000000-80-0-0.jpg" alt="" />
+            <img src="${albums.album.cover_small} " alt="${albums.artist.name}-photo" />
           </div>
           <div>
             <div class="data-up">
@@ -54,13 +54,6 @@ async function displaySpotify(query){
 
         <div class="time"><p> ${albums.duration} </p></div>
       </div>`;
-        // document.querySelector("table").innerHTML += 
-        // `<tr> <td> 
-        // <audio controls> <source src=" ${albums.preview} " type="audio/mpeg"> </audio>  </td> 
-        // <td>${albums.title}<hr />  </td>
-        // <td>${albums.album.title}<hr />  </td>
-        // <td>${albums.duration}<hr /> </td> </tr>`;
-           
        
     }
 
@@ -72,16 +65,11 @@ window.onload = () => {
 
 
 
-document.getElementById("playAudio").addEventListener("click", function(){
-	let audio = document.getElementById('testAudio');
-  if(this.className == 'is-playing'){
-    this.className = "";
-    this.innerHTML = '<i class="fas fa-play"></i>'
-    audio.pause();
-  }else{
-    this.className = "is-playing";
-    this.innerHTML = '<i class="fas fa-pause"></i>';
-    audio.play();
-  }
 
-});
+
+
+// <tr> <td> 
+//         <audio controls> <source src=" ${albums.preview} " type="audio/mpeg"> </audio>  </td> 
+//         <td>${albums.title}<hr />  </td>
+//         <td>${albums.album.title}<hr />  </td>
+//         <td>${albums.duration}<hr /> </td> </tr>

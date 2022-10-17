@@ -8,18 +8,17 @@ body {
 }
 
 header{
-  background-color: #0e55e2;
+  background-color: #1a1c22;
   height: 50px;
   display: flex;
 }
 
-.logo{
-  background-color: green;
+.logo{ 
   width: 20%;
 }
 
 .search{
-  background-color: #1a1c22;
+  
   width: 60%;
   display: flex;
   justify-content: center;
@@ -53,7 +52,6 @@ header{
 }
 
 .profile{
-  background-color: yellow;
   width: 20%;
 }
 
@@ -66,7 +64,7 @@ main{
 
 .artist-side{
   background-color: #202127;
-  width: 60%;
+  width: 100%;
   
 }
 
@@ -87,7 +85,7 @@ main{
 .name{
   display: flex;
   align-items: center;
-  width: 75%;
+  width: 100%;
 }
 
 .artist-name{
@@ -111,7 +109,7 @@ h3{
   box-sizing: border-box;
 }
 
-.labels{
+.labels, table{
   /* background-color: rgba(255, 166, 0, 0.482); */
   width: 100%;
   margin: 0;
@@ -128,6 +126,7 @@ h3{
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .cover-img{
